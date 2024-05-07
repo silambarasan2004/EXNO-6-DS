@@ -25,19 +25,19 @@ x=[1,2,3,4,5]
 y=[3,6,2,7,1]
 sns.lineplot(x=x,y=y)
 ```
-![Screenshot 2024-05-04 100012](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/1c8ab253-15f0-4b45-8caa-13ab87b620d0)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/186fe4ad-7a71-41fd-89a5-7dec67658e91)
 
 
 ```
 df=sns.load_dataset("tips")
 df
 ```
-![Screenshot 2024-05-04 100022](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/95a2ed6d-ef61-4344-be6d-175b073b5192)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/7e032dab-b465-4c37-93a2-31a5a45e05a7)
 
 ```
 sns.lineplot(x="total_bill",y="tip",data=df,hue="sex",linestyle='solid',legend="auto")
 ```
-![Screenshot 2024-05-04 100028](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/99b1f75a-f56a-48fe-91c7-4b6d4cca4c62)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/a59400d6-2620-46f1-bc89-1c41f26cb580)
 
 ```
 x=[1,2,3,4,5]
@@ -51,7 +51,6 @@ plt.title("Multi-line Plot")
 plt.xlabel('X Label')
 plt.ylabel('Y Label')
 ```
-![Screenshot 2024-05-04 100039](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/adfd7f45-e3a9-4f98-8e45-89bb247187dc)
 
 ```
 import seaborn as sns
@@ -67,7 +66,7 @@ plt.ylabel('Amount')
 plt.title('Average Total Bill and Tip by Day')
 plt.legend()
 ```
-![Screenshot 2024-05-04 100046](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/fd7c2a3a-b168-44b2-8892-0ac6d388adf9)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/dc819923-bb03-415a-b541-f3c56dfe4993)
 
 ```
 avg_total_bill = tips.groupby('time')['total_bill'].mean()
@@ -80,7 +79,7 @@ plt.ylabel('Amount')
 plt.title('Average Total Bill and Tip by Time of Day')
 plt.legend()
 ```
-![Screenshot 2024-05-04 100053](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/5c9a4aca-7887-4bab-9bf7-a441a31ed425)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/0ddec754-f4e8-45d4-b1de-42c3bd0ab7f9)
 
 ```
 years=range (2000, 2012)
@@ -89,7 +88,7 @@ oranges = [0.962, 0.941, 0.930, 0.923, 0.918, 0.908, 0.907, 0.904, 0.901, 0.898,
 plt.bar(years, apples)
 plt.bar(years, oranges, bottom=apples)
 ```
-![Screenshot 2024-05-04 100102](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/6fdee4e0-c832-43c3-9917-afff4e1375f8)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/eb832361-8868-406f-b112-b1c714c566b8)
 
 ```
 import seaborn as sns
@@ -100,7 +99,7 @@ plt.xlabel('Day of the week')
 plt.ylabel('Total Bill')
 plt.title('Total Bill by Day and Gender')
 ```
-![Screenshot 2024-05-04 100109](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/e9a48fc4-a932-4043-87ed-c46d30d52d7c)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/edd97515-2c0f-4b47-b3ad-5c34ee0a382c)
 
 ```
 import seaborn as sns
@@ -113,7 +112,7 @@ plt.xlabel('Total Bill')
 plt.ylabel('Tip Amount')
 plt.title('Scatter Plot of Total Bill vs. Tip Amount')
 ```
-![Screenshot 2024-05-04 100116](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/3694fb1b-176a-4696-aa5d-c3b1fc7b4260)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/3b66d58b-7df1-4c0a-a53b-a22b63d33d45)
 
 ```
 import numpy as np
@@ -123,7 +122,7 @@ np.random.seed(0)
 marks = np.random.normal(loc=70, scale=10, size=100)
 marks
 ```
-![Screenshot 2024-05-04 100123](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/eee0727e-d897-4540-ae5a-83cb6f59b847)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/64d3f2ab-36ae-42bf-8a8c-42507f5f79aa)
 
 ```
 sns.violinplot(x="day", y="total_bill", hue="smoker", data=tips, linewidth=2, width=0.6,
@@ -133,7 +132,7 @@ plt.xlabel("Day of the week")
 plt.ylabel("Total Bill")
 plt.title("Violin Plot of Total Bill by Day and Smoker Status")
 ```
-![Screenshot 2024-05-04 100128](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/98fb5506-36c4-4824-bfdd-7b260a2a2752)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/69107b19-bf8c-4f2e-84f7-afab5549376a)
 
 ```
 import seaborn as sns
@@ -141,7 +140,7 @@ sns.set(style = 'whitegrid')
 tip = sns.load_dataset('tips')
 sns.violinplot(x ='day', y ='tip', data = tip)
 ```
-![Screenshot 2024-05-04 100136](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/29596560-6a54-4051-9c55-0903af5c0665)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/471e06a4-5d45-4a37-8d79-2f5560e60eaf)
 
 ```
 import seaborn as sns
@@ -149,12 +148,12 @@ sns.set(style = 'whitegrid')
 tip = sns.load_dataset('tips')
 sns.violinplot(x=tip["total_bill"])
 ```
-![Screenshot 2024-05-04 100142](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/7323ef13-38b2-472b-9146-e68f7f5049df)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/78b67313-9f6c-4f7d-b0cc-1ab2ca64ffd1)
 
 ```
 sns.kdeplot(data=tips,x='total_bill',hue='time',multiple='fill',linewidth=3,palette='Set2',alpha=0.8)
 ```
-![Screenshot 2024-05-04 100149](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/322e04f2-b84b-4477-be92-23e22385feac)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/5b836d51-98f7-4393-a8ae-2aa7766635a7)
 
 ```
 sns.histplot(data=marks, bins=10, kde=True, stat='count', cumulative=False, multiple='stack', element='bars', palette='Set1', shrink=0.7)
@@ -162,8 +161,8 @@ plt.xlabel('Marks')
 plt.ylabel('Density')
 plt.title('Histogram of students Marks')
 ```
-![Screenshot 2024-05-04 100157](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/b95a290d-8aa5-421b-910f-a8d05f0db533)
-![Screenshot 2024-05-04 100205](https://github.com/Harsayazheni/Expt06-Introduction-to-Data-Science/assets/118708467/15ad7faa-d749-4ae6-8540-e56e79949db3)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/3d7e742b-fe5e-4036-96d5-7abedfb1318e)
+![image](https://github.com/silambarasan2004/EXNO-6-DS/assets/119559917/dea708a4-7e89-4a71-aba1-f4c616860c58)
 
 # Result:
 Thus, the Data Visualization using seaborn python library for the given data is implemented successfully
